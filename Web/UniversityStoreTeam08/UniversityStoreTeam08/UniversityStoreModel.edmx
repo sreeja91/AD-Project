@@ -1,0 +1,1781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UniversityStoreModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="UniversityStoreModelStoreContainer">
+          <EntitySet Name="AdjustmentVoucherDetails" EntityType="UniversityStoreModel.Store.AdjustmentVoucherDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AdjustmentVouchers" EntityType="UniversityStoreModel.Store.AdjustmentVouchers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollectionPoint" EntityType="UniversityStoreModel.Store.CollectionPoint" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ConsolidatedRequisitionList" EntityType="UniversityStoreModel.Store.ConsolidatedRequisitionList" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ConsolidatedRequisitionListDetails" EntityType="UniversityStoreModel.Store.ConsolidatedRequisitionListDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Delegate" EntityType="UniversityStoreModel.Store.Delegate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Department" EntityType="UniversityStoreModel.Store.Department" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Employee" EntityType="UniversityStoreModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Product" EntityType="UniversityStoreModel.Store.Product" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PurchaseOrder" EntityType="UniversityStoreModel.Store.PurchaseOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PurchaseOrderDetails" EntityType="UniversityStoreModel.Store.PurchaseOrderDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RequestStationaryCart" EntityType="UniversityStoreModel.Store.RequestStationaryCart" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RequisitionDetails" EntityType="UniversityStoreModel.Store.RequisitionDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RequisitionList" EntityType="UniversityStoreModel.Store.RequisitionList" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Stock" EntityType="UniversityStoreModel.Store.Stock" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Supplier" EntityType="UniversityStoreModel.Store.Supplier" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SupplyDetails" EntityType="UniversityStoreModel.Store.SupplyDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="UniversityStoreModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Transaction" EntityType="UniversityStoreModel.Store.Transaction" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Unfulfilled" EntityType="UniversityStoreModel.Store.Unfulfilled" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_AdjustmentVoucherDetails_AdjustmentVouchers" Association="UniversityStoreModel.Store.FK_AdjustmentVoucherDetails_AdjustmentVouchers">
+            <End Role="AdjustmentVouchers" EntitySet="AdjustmentVouchers" />
+            <End Role="AdjustmentVoucherDetails" EntitySet="AdjustmentVoucherDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdjustmentVoucherDetails_Product" Association="UniversityStoreModel.Store.FK_AdjustmentVoucherDetails_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="AdjustmentVoucherDetails" EntitySet="AdjustmentVoucherDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConsolidatedRequisitionList_Department" Association="UniversityStoreModel.Store.FK_ConsolidatedRequisitionList_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="ConsolidatedRequisitionList" EntitySet="ConsolidatedRequisitionList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList" Association="UniversityStoreModel.Store.FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList">
+            <End Role="ConsolidatedRequisitionList" EntitySet="ConsolidatedRequisitionList" />
+            <End Role="ConsolidatedRequisitionListDetails" EntitySet="ConsolidatedRequisitionListDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConsolidatedRequisitionListDetails_Product" Association="UniversityStoreModel.Store.FK_ConsolidatedRequisitionListDetails_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="ConsolidatedRequisitionListDetails" EntitySet="ConsolidatedRequisitionListDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_CollectionPoint" Association="UniversityStoreModel.Store.FK_Department_CollectionPoint">
+            <End Role="CollectionPoint" EntitySet="CollectionPoint" />
+            <End Role="Department" EntitySet="Department" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_Employee" Association="UniversityStoreModel.Store.FK_Department_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Department" EntitySet="Department" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_Employee1" Association="UniversityStoreModel.Store.FK_Department_Employee1">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Department" EntitySet="Department" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Department" Association="UniversityStoreModel.Store.FK_Employee_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Supplier" Association="UniversityStoreModel.Store.FK_Product_Supplier">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Supplier1" Association="UniversityStoreModel.Store.FK_Product_Supplier1">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Supplier2" Association="UniversityStoreModel.Store.FK_Product_Supplier2">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseOrder_Supplier" Association="UniversityStoreModel.Store.FK_PurchaseOrder_Supplier">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseOrderDetails_Product" Association="UniversityStoreModel.Store.FK_PurchaseOrderDetails_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="PurchaseOrderDetails" EntitySet="PurchaseOrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseOrderDetails_PurchaseOrder" Association="UniversityStoreModel.Store.FK_PurchaseOrderDetails_PurchaseOrder">
+            <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+            <End Role="PurchaseOrderDetails" EntitySet="PurchaseOrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionDetails_Product" Association="UniversityStoreModel.Store.FK_RequisitionDetails_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="RequisitionDetails" EntitySet="RequisitionDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionDetails_RequisitionList" Association="UniversityStoreModel.Store.FK_RequisitionDetails_RequisitionList">
+            <End Role="RequisitionList" EntitySet="RequisitionList" />
+            <End Role="RequisitionDetails" EntitySet="RequisitionDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionList_Department" Association="UniversityStoreModel.Store.FK_RequisitionList_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="RequisitionList" EntitySet="RequisitionList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionList_Employee" Association="UniversityStoreModel.Store.FK_RequisitionList_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="RequisitionList" EntitySet="RequisitionList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionList_Employee1" Association="UniversityStoreModel.Store.FK_RequisitionList_Employee1">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="RequisitionList" EntitySet="RequisitionList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stock_Product" Association="UniversityStoreModel.Store.FK_Stock_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Stock" EntitySet="Stock" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyDetails_Product" Association="UniversityStoreModel.Store.FK_SupplyDetails_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="SupplyDetails" EntitySet="SupplyDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyDetails_Supplier" Association="UniversityStoreModel.Store.FK_SupplyDetails_Supplier">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="SupplyDetails" EntitySet="SupplyDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Unfulfilled_Department" Association="UniversityStoreModel.Store.FK_Unfulfilled_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Unfulfilled" EntitySet="Unfulfilled" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Unfulfilled_Product" Association="UniversityStoreModel.Store.FK_Unfulfilled_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Unfulfilled" EntitySet="Unfulfilled" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AdjustmentVoucherDetails">
+          <Key>
+            <PropertyRef Name="VoucherNumber" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="VoucherNumber" Type="int" Nullable="false" />
+          <Property Name="ItemNumber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="TotalPrice" Type="float" />
+          <Property Name="Comment" Type="varchar" MaxLength="50" />
+          <Property Name="ApprovalStatus" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="AdjustmentVouchers">
+          <Key>
+            <PropertyRef Name="VoucherNumber" />
+          </Key>
+          <Property Name="VoucherNumber" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DateCreated" Type="date" />
+        </EntityType>
+        <EntityType Name="CollectionPoint">
+          <Key>
+            <PropertyRef Name="CollectionPointID" />
+          </Key>
+          <Property Name="CollectionPointID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="CollectionTime" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ConsolidatedRequisitionList">
+          <Key>
+            <PropertyRef Name="ConsolidatedListID" />
+          </Key>
+          <Property Name="ConsolidatedListID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentCode" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ConsolidatedRequisitionListDetails">
+          <Key>
+            <PropertyRef Name="ConsolidatedListID" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="ConsolidatedListID" Type="int" Nullable="false" />
+          <Property Name="ItemNumber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="QuantityRequested" Type="int" />
+          <Property Name="DateRequest" Type="date" />
+          <Property Name="ActualQuantity" Type="int" />
+        </EntityType>
+        <EntityType Name="Delegate">
+          <Key>
+            <PropertyRef Name="DelegateID" />
+          </Key>
+          <Property Name="DelegateID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeNumber" Type="varchar" MaxLength="50" />
+          <Property Name="DateFrom" Type="date" />
+          <Property Name="DateTo" Type="date" />
+          <Property Name="DepartmentCode" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentCode" />
+          </Key>
+          <Property Name="DepartmentCode" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DepatmentName" Type="varchar" MaxLength="50" />
+          <Property Name="ContactName" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+          <Property Name="FaxNo" Type="varchar" MaxLength="50" />
+          <Property Name="HeadsEmployeeNumber" Type="varchar" MaxLength="50" />
+          <Property Name="CollectionPointID" Type="varchar" MaxLength="50" />
+          <Property Name="RepresentativeEmpNo" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeNumber" />
+          </Key>
+          <Property Name="EmployeeNumber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DepartmentCode" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Role" Type="varchar" MaxLength="50" />
+          <Property Name="Delagate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="ItemNumber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Category" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="50" />
+          <Property Name="ReorderLevel" Type="int" />
+          <Property Name="ReorderQuantity" Type="int" />
+          <Property Name="UnitOfMeasure" Type="varchar" MaxLength="50" />
+          <Property Name="Bin" Type="int" />
+          <Property Name="Supplier1ID" Type="varchar" MaxLength="50" />
+          <Property Name="Supplier2ID" Type="varchar" MaxLength="50" />
+          <Property Name="Supplier3ID" Type="varchar" MaxLength="50" />
+          <Property Name="AdjustmentVoucherPrice" Type="float" />
+        </EntityType>
+        <EntityType Name="PurchaseOrder">
+          <Key>
+            <PropertyRef Name="PONumber" />
+          </Key>
+          <Property Name="PONumber" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+          <Property Name="DateCreated" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PurchaseOrderDetails">
+          <Key>
+            <PropertyRef Name="PONumber" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="PONumber" Type="int" Nullable="false" />
+          <Property Name="ItemNumber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="50" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Price" Type="float" />
+        </EntityType>
+        <EntityType Name="RequestStationaryCart">
+          <Key>
+            <PropertyRef Name="ItemCode" />
+            <PropertyRef Name="EmployeeNumber" />
+          </Key>
+          <Property Name="ItemCode" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RequisitionDetails">
+          <Key>
+            <PropertyRef Name="RequisitionListNumber" />
+            <PropertyRef Name="ItemNmber" />
+          </Key>
+          <Property Name="RequisitionListNumber" Type="int" Nullable="false" />
+          <Property Name="ItemNmber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Quantity" Type="int" />
+        </EntityType>
+        <EntityType Name="RequisitionList">
+          <Key>
+            <PropertyRef Name="RequisitionListNumber" />
+          </Key>
+          <Property Name="RequisitionListNumber" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentCode" Type="varchar" MaxLength="50" />
+          <Property Name="EmployeeNumber" Type="varchar" MaxLength="50" />
+          <Property Name="DateCreated" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="ApprovedByHeadID" Type="varchar" MaxLength="50" />
+          <Property Name="Comment" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Stock">
+          <Key>
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="ItemNumber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="TotalInventoryBalance" Type="int" />
+        </EntityType>
+        <EntityType Name="Supplier">
+          <Key>
+            <PropertyRef Name="SupplierCode" />
+          </Key>
+          <Property Name="SupplierCode" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="ContactName" Type="varchar" MaxLength="50" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+          <Property Name="FaxNo" Type="varchar" MaxLength="50" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
+          <Property Name="GSTRegistrationNo" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SupplyDetails">
+          <Key>
+            <PropertyRef Name="SupplierCode" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="SupplierCode" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ItemNumber" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Price" Type="float" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Transaction">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionDate" Type="date" />
+          <Property Name="Description" Type="varchar" MaxLength="50" />
+          <Property Name="Flow" Type="varchar" MaxLength="50" />
+          <Property Name="QuantityAdjusted" Type="int" />
+        </EntityType>
+        <EntityType Name="Unfulfilled">
+          <Key>
+            <PropertyRef Name="UnfulfilledID" />
+          </Key>
+          <Property Name="UnfulfilledID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentCode" Type="varchar" MaxLength="50" />
+          <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+          <Property Name="UnfulfilledQuantity" Type="int" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="DateCreated" Type="date" />
+        </EntityType>
+        <Association Name="FK_AdjustmentVoucherDetails_AdjustmentVouchers">
+          <End Role="AdjustmentVouchers" Type="UniversityStoreModel.Store.AdjustmentVouchers" Multiplicity="1" />
+          <End Role="AdjustmentVoucherDetails" Type="UniversityStoreModel.Store.AdjustmentVoucherDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdjustmentVouchers">
+              <PropertyRef Name="VoucherNumber" />
+            </Principal>
+            <Dependent Role="AdjustmentVoucherDetails">
+              <PropertyRef Name="VoucherNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdjustmentVoucherDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="1" />
+          <End Role="AdjustmentVoucherDetails" Type="UniversityStoreModel.Store.AdjustmentVoucherDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="AdjustmentVoucherDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConsolidatedRequisitionList_Department">
+          <End Role="Department" Type="UniversityStoreModel.Store.Department" Multiplicity="0..1" />
+          <End Role="ConsolidatedRequisitionList" Type="UniversityStoreModel.Store.ConsolidatedRequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="ConsolidatedRequisitionList">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList">
+          <End Role="ConsolidatedRequisitionList" Type="UniversityStoreModel.Store.ConsolidatedRequisitionList" Multiplicity="1" />
+          <End Role="ConsolidatedRequisitionListDetails" Type="UniversityStoreModel.Store.ConsolidatedRequisitionListDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ConsolidatedRequisitionList">
+              <PropertyRef Name="ConsolidatedListID" />
+            </Principal>
+            <Dependent Role="ConsolidatedRequisitionListDetails">
+              <PropertyRef Name="ConsolidatedListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConsolidatedRequisitionListDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="1" />
+          <End Role="ConsolidatedRequisitionListDetails" Type="UniversityStoreModel.Store.ConsolidatedRequisitionListDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="ConsolidatedRequisitionListDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_CollectionPoint">
+          <End Role="CollectionPoint" Type="UniversityStoreModel.Store.CollectionPoint" Multiplicity="0..1" />
+          <End Role="Department" Type="UniversityStoreModel.Store.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollectionPoint">
+              <PropertyRef Name="CollectionPointID" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="CollectionPointID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_Employee">
+          <End Role="Employee" Type="UniversityStoreModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="Department" Type="UniversityStoreModel.Store.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="HeadsEmployeeNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_Employee1">
+          <End Role="Employee" Type="UniversityStoreModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="Department" Type="UniversityStoreModel.Store.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="RepresentativeEmpNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Department">
+          <End Role="Department" Type="UniversityStoreModel.Store.Department" Multiplicity="0..1" />
+          <End Role="Employee" Type="UniversityStoreModel.Store.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Supplier">
+          <End Role="Supplier" Type="UniversityStoreModel.Store.Supplier" Multiplicity="0..1" />
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Supplier1ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Supplier1">
+          <End Role="Supplier" Type="UniversityStoreModel.Store.Supplier" Multiplicity="0..1" />
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Supplier2ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Supplier2">
+          <End Role="Supplier" Type="UniversityStoreModel.Store.Supplier" Multiplicity="0..1" />
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Supplier3ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseOrder_Supplier">
+          <End Role="Supplier" Type="UniversityStoreModel.Store.Supplier" Multiplicity="0..1" />
+          <End Role="PurchaseOrder" Type="UniversityStoreModel.Store.PurchaseOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="PurchaseOrder">
+              <PropertyRef Name="SupplierCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseOrderDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="1" />
+          <End Role="PurchaseOrderDetails" Type="UniversityStoreModel.Store.PurchaseOrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="PurchaseOrderDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseOrderDetails_PurchaseOrder">
+          <End Role="PurchaseOrder" Type="UniversityStoreModel.Store.PurchaseOrder" Multiplicity="1" />
+          <End Role="PurchaseOrderDetails" Type="UniversityStoreModel.Store.PurchaseOrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PurchaseOrder">
+              <PropertyRef Name="PONumber" />
+            </Principal>
+            <Dependent Role="PurchaseOrderDetails">
+              <PropertyRef Name="PONumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="1" />
+          <End Role="RequisitionDetails" Type="UniversityStoreModel.Store.RequisitionDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="RequisitionDetails">
+              <PropertyRef Name="ItemNmber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionDetails_RequisitionList">
+          <End Role="RequisitionList" Type="UniversityStoreModel.Store.RequisitionList" Multiplicity="1" />
+          <End Role="RequisitionDetails" Type="UniversityStoreModel.Store.RequisitionDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RequisitionList">
+              <PropertyRef Name="RequisitionListNumber" />
+            </Principal>
+            <Dependent Role="RequisitionDetails">
+              <PropertyRef Name="RequisitionListNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionList_Department">
+          <End Role="Department" Type="UniversityStoreModel.Store.Department" Multiplicity="0..1" />
+          <End Role="RequisitionList" Type="UniversityStoreModel.Store.RequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="RequisitionList">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionList_Employee">
+          <End Role="Employee" Type="UniversityStoreModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="RequisitionList" Type="UniversityStoreModel.Store.RequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="RequisitionList">
+              <PropertyRef Name="EmployeeNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionList_Employee1">
+          <End Role="Employee" Type="UniversityStoreModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="RequisitionList" Type="UniversityStoreModel.Store.RequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="RequisitionList">
+              <PropertyRef Name="ApprovedByHeadID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stock_Product">
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="1" />
+          <End Role="Stock" Type="UniversityStoreModel.Store.Stock" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="Stock">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="1" />
+          <End Role="SupplyDetails" Type="UniversityStoreModel.Store.SupplyDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="SupplyDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyDetails_Supplier">
+          <End Role="Supplier" Type="UniversityStoreModel.Store.Supplier" Multiplicity="1" />
+          <End Role="SupplyDetails" Type="UniversityStoreModel.Store.SupplyDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="SupplyDetails">
+              <PropertyRef Name="SupplierCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Unfulfilled_Department">
+          <End Role="Department" Type="UniversityStoreModel.Store.Department" Multiplicity="0..1" />
+          <End Role="Unfulfilled" Type="UniversityStoreModel.Store.Unfulfilled" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="Unfulfilled">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Unfulfilled_Product">
+          <End Role="Product" Type="UniversityStoreModel.Store.Product" Multiplicity="0..1" />
+          <End Role="Unfulfilled" Type="UniversityStoreModel.Store.Unfulfilled" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="Unfulfilled">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UniversityStoreModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="UniversityStoreEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdjustmentVoucherDetails" EntityType="UniversityStoreModel.AdjustmentVoucherDetail" />
+          <EntitySet Name="AdjustmentVouchers" EntityType="UniversityStoreModel.AdjustmentVoucher" />
+          <EntitySet Name="CollectionPoints" EntityType="UniversityStoreModel.CollectionPoint" />
+          <EntitySet Name="ConsolidatedRequisitionLists" EntityType="UniversityStoreModel.ConsolidatedRequisitionList" />
+          <EntitySet Name="ConsolidatedRequisitionListDetails" EntityType="UniversityStoreModel.ConsolidatedRequisitionListDetail" />
+          <EntitySet Name="Delegates" EntityType="UniversityStoreModel.Delegate" />
+          <EntitySet Name="Departments" EntityType="UniversityStoreModel.Department" />
+          <EntitySet Name="Employees" EntityType="UniversityStoreModel.Employee" />
+          <EntitySet Name="Products" EntityType="UniversityStoreModel.Product" />
+          <EntitySet Name="PurchaseOrders" EntityType="UniversityStoreModel.PurchaseOrder" />
+          <EntitySet Name="PurchaseOrderDetails" EntityType="UniversityStoreModel.PurchaseOrderDetail" />
+          <EntitySet Name="RequestStationaryCarts" EntityType="UniversityStoreModel.RequestStationaryCart" />
+          <EntitySet Name="RequisitionDetails" EntityType="UniversityStoreModel.RequisitionDetail" />
+          <EntitySet Name="RequisitionLists" EntityType="UniversityStoreModel.RequisitionList" />
+          <EntitySet Name="Stocks" EntityType="UniversityStoreModel.Stock" />
+          <EntitySet Name="Suppliers" EntityType="UniversityStoreModel.Supplier" />
+          <EntitySet Name="SupplyDetails" EntityType="UniversityStoreModel.SupplyDetail" />
+          <EntitySet Name="sysdiagrams" EntityType="UniversityStoreModel.sysdiagram" />
+          <EntitySet Name="Transactions" EntityType="UniversityStoreModel.Transaction" />
+          <EntitySet Name="Unfulfilleds" EntityType="UniversityStoreModel.Unfulfilled" />
+          <AssociationSet Name="FK_AdjustmentVoucherDetails_AdjustmentVouchers" Association="UniversityStoreModel.FK_AdjustmentVoucherDetails_AdjustmentVouchers">
+            <End Role="AdjustmentVouchers" EntitySet="AdjustmentVouchers" />
+            <End Role="AdjustmentVoucherDetails" EntitySet="AdjustmentVoucherDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdjustmentVoucherDetails_Product" Association="UniversityStoreModel.FK_AdjustmentVoucherDetails_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="AdjustmentVoucherDetails" EntitySet="AdjustmentVoucherDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_CollectionPoint" Association="UniversityStoreModel.FK_Department_CollectionPoint">
+            <End Role="CollectionPoint" EntitySet="CollectionPoints" />
+            <End Role="Department" EntitySet="Departments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConsolidatedRequisitionList_Department" Association="UniversityStoreModel.FK_ConsolidatedRequisitionList_Department">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="ConsolidatedRequisitionList" EntitySet="ConsolidatedRequisitionLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList" Association="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList">
+            <End Role="ConsolidatedRequisitionList" EntitySet="ConsolidatedRequisitionLists" />
+            <End Role="ConsolidatedRequisitionListDetails" EntitySet="ConsolidatedRequisitionListDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConsolidatedRequisitionListDetails_Product" Association="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="ConsolidatedRequisitionListDetails" EntitySet="ConsolidatedRequisitionListDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_Employee" Association="UniversityStoreModel.FK_Department_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Department" EntitySet="Departments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Department_Employee1" Association="UniversityStoreModel.FK_Department_Employee1">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Department" EntitySet="Departments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Department" Association="UniversityStoreModel.FK_Employee_Department">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionList_Department" Association="UniversityStoreModel.FK_RequisitionList_Department">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="RequisitionList" EntitySet="RequisitionLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Unfulfilled_Department" Association="UniversityStoreModel.FK_Unfulfilled_Department">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="Unfulfilled" EntitySet="Unfulfilleds" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionList_Employee" Association="UniversityStoreModel.FK_RequisitionList_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="RequisitionList" EntitySet="RequisitionLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionList_Employee1" Association="UniversityStoreModel.FK_RequisitionList_Employee1">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="RequisitionList" EntitySet="RequisitionLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Supplier" Association="UniversityStoreModel.FK_Product_Supplier">
+            <End Role="Supplier" EntitySet="Suppliers" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Supplier1" Association="UniversityStoreModel.FK_Product_Supplier1">
+            <End Role="Supplier" EntitySet="Suppliers" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Supplier2" Association="UniversityStoreModel.FK_Product_Supplier2">
+            <End Role="Supplier" EntitySet="Suppliers" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseOrderDetails_Product" Association="UniversityStoreModel.FK_PurchaseOrderDetails_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="PurchaseOrderDetails" EntitySet="PurchaseOrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionDetails_Product" Association="UniversityStoreModel.FK_RequisitionDetails_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="RequisitionDetails" EntitySet="RequisitionDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stock_Product" Association="UniversityStoreModel.FK_Stock_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Stock" EntitySet="Stocks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyDetails_Product" Association="UniversityStoreModel.FK_SupplyDetails_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="SupplyDetails" EntitySet="SupplyDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Unfulfilled_Product" Association="UniversityStoreModel.FK_Unfulfilled_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Unfulfilled" EntitySet="Unfulfilleds" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseOrder_Supplier" Association="UniversityStoreModel.FK_PurchaseOrder_Supplier">
+            <End Role="Supplier" EntitySet="Suppliers" />
+            <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseOrderDetails_PurchaseOrder" Association="UniversityStoreModel.FK_PurchaseOrderDetails_PurchaseOrder">
+            <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
+            <End Role="PurchaseOrderDetails" EntitySet="PurchaseOrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RequisitionDetails_RequisitionList" Association="UniversityStoreModel.FK_RequisitionDetails_RequisitionList">
+            <End Role="RequisitionList" EntitySet="RequisitionLists" />
+            <End Role="RequisitionDetails" EntitySet="RequisitionDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SupplyDetails_Supplier" Association="UniversityStoreModel.FK_SupplyDetails_Supplier">
+            <End Role="Supplier" EntitySet="Suppliers" />
+            <End Role="SupplyDetails" EntitySet="SupplyDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AdjustmentVoucherDetail">
+          <Key>
+            <PropertyRef Name="VoucherNumber" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="VoucherNumber" Type="Int32" Nullable="false" />
+          <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="TotalPrice" Type="Double" />
+          <Property Name="Comment" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApprovalStatus" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="AdjustmentVoucher" Relationship="UniversityStoreModel.FK_AdjustmentVoucherDetails_AdjustmentVouchers" FromRole="AdjustmentVoucherDetails" ToRole="AdjustmentVouchers" />
+          <NavigationProperty Name="Product" Relationship="UniversityStoreModel.FK_AdjustmentVoucherDetails_Product" FromRole="AdjustmentVoucherDetails" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="AdjustmentVoucher">
+          <Key>
+            <PropertyRef Name="VoucherNumber" />
+          </Key>
+          <Property Name="VoucherNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateCreated" Type="DateTime" />
+          <NavigationProperty Name="AdjustmentVoucherDetails" Relationship="UniversityStoreModel.FK_AdjustmentVoucherDetails_AdjustmentVouchers" FromRole="AdjustmentVouchers" ToRole="AdjustmentVoucherDetails" />
+        </EntityType>
+        <EntityType Name="CollectionPoint">
+          <Key>
+            <PropertyRef Name="CollectionPointID" />
+          </Key>
+          <Property Name="CollectionPointID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CollectionTime" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Departments" Relationship="UniversityStoreModel.FK_Department_CollectionPoint" FromRole="CollectionPoint" ToRole="Department" />
+        </EntityType>
+        <EntityType Name="ConsolidatedRequisitionList">
+          <Key>
+            <PropertyRef Name="ConsolidatedListID" />
+          </Key>
+          <Property Name="ConsolidatedListID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Department" Relationship="UniversityStoreModel.FK_ConsolidatedRequisitionList_Department" FromRole="ConsolidatedRequisitionList" ToRole="Department" />
+          <NavigationProperty Name="ConsolidatedRequisitionListDetails" Relationship="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList" FromRole="ConsolidatedRequisitionList" ToRole="ConsolidatedRequisitionListDetails" />
+        </EntityType>
+        <EntityType Name="ConsolidatedRequisitionListDetail">
+          <Key>
+            <PropertyRef Name="ConsolidatedListID" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="ConsolidatedListID" Type="Int32" Nullable="false" />
+          <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="QuantityRequested" Type="Int32" />
+          <Property Name="DateRequest" Type="DateTime" />
+          <Property Name="ActualQuantity" Type="Int32" />
+          <NavigationProperty Name="ConsolidatedRequisitionList" Relationship="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList" FromRole="ConsolidatedRequisitionListDetails" ToRole="ConsolidatedRequisitionList" />
+          <NavigationProperty Name="Product" Relationship="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_Product" FromRole="ConsolidatedRequisitionListDetails" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Delegate">
+          <Key>
+            <PropertyRef Name="DelegateID" />
+          </Key>
+          <Property Name="DelegateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DateFrom" Type="DateTime" />
+          <Property Name="DateTo" Type="DateTime" />
+          <Property Name="DepartmentCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentCode" />
+          </Key>
+          <Property Name="DepartmentCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DepatmentName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ContactName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PhoneNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FaxNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="HeadsEmployeeNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CollectionPointID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RepresentativeEmpNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="CollectionPoint" Relationship="UniversityStoreModel.FK_Department_CollectionPoint" FromRole="Department" ToRole="CollectionPoint" />
+          <NavigationProperty Name="ConsolidatedRequisitionLists" Relationship="UniversityStoreModel.FK_ConsolidatedRequisitionList_Department" FromRole="Department" ToRole="ConsolidatedRequisitionList" />
+          <NavigationProperty Name="Employee" Relationship="UniversityStoreModel.FK_Department_Employee" FromRole="Department" ToRole="Employee" />
+          <NavigationProperty Name="Employee1" Relationship="UniversityStoreModel.FK_Department_Employee1" FromRole="Department" ToRole="Employee" />
+          <NavigationProperty Name="Employees" Relationship="UniversityStoreModel.FK_Employee_Department" FromRole="Department" ToRole="Employee" />
+          <NavigationProperty Name="RequisitionLists" Relationship="UniversityStoreModel.FK_RequisitionList_Department" FromRole="Department" ToRole="RequisitionList" />
+          <NavigationProperty Name="Unfulfilleds" Relationship="UniversityStoreModel.FK_Unfulfilled_Department" FromRole="Department" ToRole="Unfulfilled" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeNumber" />
+          </Key>
+          <Property Name="EmployeeNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DepartmentCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Role" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Delagate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Departments" Relationship="UniversityStoreModel.FK_Department_Employee" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="Departments1" Relationship="UniversityStoreModel.FK_Department_Employee1" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="Department" Relationship="UniversityStoreModel.FK_Employee_Department" FromRole="Employee" ToRole="Department" />
+          <NavigationProperty Name="RequisitionLists" Relationship="UniversityStoreModel.FK_RequisitionList_Employee" FromRole="Employee" ToRole="RequisitionList" />
+          <NavigationProperty Name="RequisitionLists1" Relationship="UniversityStoreModel.FK_RequisitionList_Employee1" FromRole="Employee" ToRole="RequisitionList" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Category" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ReorderLevel" Type="Int32" />
+          <Property Name="ReorderQuantity" Type="Int32" />
+          <Property Name="UnitOfMeasure" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Bin" Type="Int32" />
+          <Property Name="Supplier1ID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Supplier2ID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Supplier3ID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AdjustmentVoucherPrice" Type="Double" />
+          <NavigationProperty Name="AdjustmentVoucherDetails" Relationship="UniversityStoreModel.FK_AdjustmentVoucherDetails_Product" FromRole="Product" ToRole="AdjustmentVoucherDetails" />
+          <NavigationProperty Name="ConsolidatedRequisitionListDetails" Relationship="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_Product" FromRole="Product" ToRole="ConsolidatedRequisitionListDetails" />
+          <NavigationProperty Name="Supplier" Relationship="UniversityStoreModel.FK_Product_Supplier" FromRole="Product" ToRole="Supplier" />
+          <NavigationProperty Name="Supplier1" Relationship="UniversityStoreModel.FK_Product_Supplier1" FromRole="Product" ToRole="Supplier" />
+          <NavigationProperty Name="Supplier2" Relationship="UniversityStoreModel.FK_Product_Supplier2" FromRole="Product" ToRole="Supplier" />
+          <NavigationProperty Name="PurchaseOrderDetails" Relationship="UniversityStoreModel.FK_PurchaseOrderDetails_Product" FromRole="Product" ToRole="PurchaseOrderDetails" />
+          <NavigationProperty Name="RequisitionDetails" Relationship="UniversityStoreModel.FK_RequisitionDetails_Product" FromRole="Product" ToRole="RequisitionDetails" />
+          <NavigationProperty Name="Stock" Relationship="UniversityStoreModel.FK_Stock_Product" FromRole="Product" ToRole="Stock" />
+          <NavigationProperty Name="SupplyDetails" Relationship="UniversityStoreModel.FK_SupplyDetails_Product" FromRole="Product" ToRole="SupplyDetails" />
+          <NavigationProperty Name="Unfulfilleds" Relationship="UniversityStoreModel.FK_Unfulfilled_Product" FromRole="Product" ToRole="Unfulfilled" />
+        </EntityType>
+        <EntityType Name="PurchaseOrder">
+          <Key>
+            <PropertyRef Name="PONumber" />
+          </Key>
+          <Property Name="PONumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SupplierCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Supplier" Relationship="UniversityStoreModel.FK_PurchaseOrder_Supplier" FromRole="PurchaseOrder" ToRole="Supplier" />
+          <NavigationProperty Name="PurchaseOrderDetails" Relationship="UniversityStoreModel.FK_PurchaseOrderDetails_PurchaseOrder" FromRole="PurchaseOrder" ToRole="PurchaseOrderDetails" />
+        </EntityType>
+        <EntityType Name="PurchaseOrderDetail">
+          <Key>
+            <PropertyRef Name="PONumber" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="PONumber" Type="Int32" Nullable="false" />
+          <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Price" Type="Double" />
+          <NavigationProperty Name="Product" Relationship="UniversityStoreModel.FK_PurchaseOrderDetails_Product" FromRole="PurchaseOrderDetails" ToRole="Product" />
+          <NavigationProperty Name="PurchaseOrder" Relationship="UniversityStoreModel.FK_PurchaseOrderDetails_PurchaseOrder" FromRole="PurchaseOrderDetails" ToRole="PurchaseOrder" />
+        </EntityType>
+        <EntityType Name="RequestStationaryCart">
+          <Key>
+            <PropertyRef Name="ItemCode" />
+            <PropertyRef Name="EmployeeNumber" />
+          </Key>
+          <Property Name="ItemCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RequisitionDetail">
+          <Key>
+            <PropertyRef Name="RequisitionListNumber" />
+            <PropertyRef Name="ItemNmber" />
+          </Key>
+          <Property Name="RequisitionListNumber" Type="Int32" Nullable="false" />
+          <Property Name="ItemNmber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <NavigationProperty Name="Product" Relationship="UniversityStoreModel.FK_RequisitionDetails_Product" FromRole="RequisitionDetails" ToRole="Product" />
+          <NavigationProperty Name="RequisitionList" Relationship="UniversityStoreModel.FK_RequisitionDetails_RequisitionList" FromRole="RequisitionDetails" ToRole="RequisitionList" />
+        </EntityType>
+        <EntityType Name="RequisitionList">
+          <Key>
+            <PropertyRef Name="RequisitionListNumber" />
+          </Key>
+          <Property Name="RequisitionListNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmployeeNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApprovedByHeadID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Comment" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Department" Relationship="UniversityStoreModel.FK_RequisitionList_Department" FromRole="RequisitionList" ToRole="Department" />
+          <NavigationProperty Name="Employee" Relationship="UniversityStoreModel.FK_RequisitionList_Employee" FromRole="RequisitionList" ToRole="Employee" />
+          <NavigationProperty Name="Employee1" Relationship="UniversityStoreModel.FK_RequisitionList_Employee1" FromRole="RequisitionList" ToRole="Employee" />
+          <NavigationProperty Name="RequisitionDetails" Relationship="UniversityStoreModel.FK_RequisitionDetails_RequisitionList" FromRole="RequisitionList" ToRole="RequisitionDetails" />
+        </EntityType>
+        <EntityType Name="Stock">
+          <Key>
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TotalInventoryBalance" Type="Int32" />
+          <NavigationProperty Name="Product" Relationship="UniversityStoreModel.FK_Stock_Product" FromRole="Stock" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Supplier">
+          <Key>
+            <PropertyRef Name="SupplierCode" />
+          </Key>
+          <Property Name="SupplierCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ContactName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PhoneNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FaxNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="GSTRegistrationNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Products" Relationship="UniversityStoreModel.FK_Product_Supplier" FromRole="Supplier" ToRole="Product" />
+          <NavigationProperty Name="Products1" Relationship="UniversityStoreModel.FK_Product_Supplier1" FromRole="Supplier" ToRole="Product" />
+          <NavigationProperty Name="Products2" Relationship="UniversityStoreModel.FK_Product_Supplier2" FromRole="Supplier" ToRole="Product" />
+          <NavigationProperty Name="PurchaseOrders" Relationship="UniversityStoreModel.FK_PurchaseOrder_Supplier" FromRole="Supplier" ToRole="PurchaseOrder" />
+          <NavigationProperty Name="SupplyDetails" Relationship="UniversityStoreModel.FK_SupplyDetails_Supplier" FromRole="Supplier" ToRole="SupplyDetails" />
+        </EntityType>
+        <EntityType Name="SupplyDetail">
+          <Key>
+            <PropertyRef Name="SupplierCode" />
+            <PropertyRef Name="ItemNumber" />
+          </Key>
+          <Property Name="SupplierCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Price" Type="Double" />
+          <NavigationProperty Name="Product" Relationship="UniversityStoreModel.FK_SupplyDetails_Product" FromRole="SupplyDetails" ToRole="Product" />
+          <NavigationProperty Name="Supplier" Relationship="UniversityStoreModel.FK_SupplyDetails_Supplier" FromRole="SupplyDetails" ToRole="Supplier" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Transaction">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionDate" Type="DateTime" />
+          <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Flow" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="QuantityAdjusted" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Unfulfilled">
+          <Key>
+            <PropertyRef Name="UnfulfilledID" />
+          </Key>
+          <Property Name="UnfulfilledID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ItemNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UnfulfilledQuantity" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" />
+          <NavigationProperty Name="Department" Relationship="UniversityStoreModel.FK_Unfulfilled_Department" FromRole="Unfulfilled" ToRole="Department" />
+          <NavigationProperty Name="Product" Relationship="UniversityStoreModel.FK_Unfulfilled_Product" FromRole="Unfulfilled" ToRole="Product" />
+        </EntityType>
+        <Association Name="FK_AdjustmentVoucherDetails_AdjustmentVouchers">
+          <End Role="AdjustmentVouchers" Type="UniversityStoreModel.AdjustmentVoucher" Multiplicity="1" />
+          <End Role="AdjustmentVoucherDetails" Type="UniversityStoreModel.AdjustmentVoucherDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AdjustmentVouchers">
+              <PropertyRef Name="VoucherNumber" />
+            </Principal>
+            <Dependent Role="AdjustmentVoucherDetails">
+              <PropertyRef Name="VoucherNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdjustmentVoucherDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="1" />
+          <End Role="AdjustmentVoucherDetails" Type="UniversityStoreModel.AdjustmentVoucherDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="AdjustmentVoucherDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_CollectionPoint">
+          <End Role="CollectionPoint" Type="UniversityStoreModel.CollectionPoint" Multiplicity="0..1" />
+          <End Role="Department" Type="UniversityStoreModel.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollectionPoint">
+              <PropertyRef Name="CollectionPointID" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="CollectionPointID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConsolidatedRequisitionList_Department">
+          <End Role="Department" Type="UniversityStoreModel.Department" Multiplicity="0..1" />
+          <End Role="ConsolidatedRequisitionList" Type="UniversityStoreModel.ConsolidatedRequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="ConsolidatedRequisitionList">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList">
+          <End Role="ConsolidatedRequisitionList" Type="UniversityStoreModel.ConsolidatedRequisitionList" Multiplicity="1" />
+          <End Role="ConsolidatedRequisitionListDetails" Type="UniversityStoreModel.ConsolidatedRequisitionListDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ConsolidatedRequisitionList">
+              <PropertyRef Name="ConsolidatedListID" />
+            </Principal>
+            <Dependent Role="ConsolidatedRequisitionListDetails">
+              <PropertyRef Name="ConsolidatedListID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConsolidatedRequisitionListDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="1" />
+          <End Role="ConsolidatedRequisitionListDetails" Type="UniversityStoreModel.ConsolidatedRequisitionListDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="ConsolidatedRequisitionListDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_Employee">
+          <End Role="Employee" Type="UniversityStoreModel.Employee" Multiplicity="0..1" />
+          <End Role="Department" Type="UniversityStoreModel.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="HeadsEmployeeNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Department_Employee1">
+          <End Role="Employee" Type="UniversityStoreModel.Employee" Multiplicity="0..1" />
+          <End Role="Department" Type="UniversityStoreModel.Department" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="Department">
+              <PropertyRef Name="RepresentativeEmpNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Department">
+          <End Role="Department" Type="UniversityStoreModel.Department" Multiplicity="0..1" />
+          <End Role="Employee" Type="UniversityStoreModel.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionList_Department">
+          <End Role="Department" Type="UniversityStoreModel.Department" Multiplicity="0..1" />
+          <End Role="RequisitionList" Type="UniversityStoreModel.RequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="RequisitionList">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Unfulfilled_Department">
+          <End Role="Department" Type="UniversityStoreModel.Department" Multiplicity="0..1" />
+          <End Role="Unfulfilled" Type="UniversityStoreModel.Unfulfilled" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentCode" />
+            </Principal>
+            <Dependent Role="Unfulfilled">
+              <PropertyRef Name="DepartmentCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionList_Employee">
+          <End Role="Employee" Type="UniversityStoreModel.Employee" Multiplicity="0..1" />
+          <End Role="RequisitionList" Type="UniversityStoreModel.RequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="RequisitionList">
+              <PropertyRef Name="EmployeeNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionList_Employee1">
+          <End Role="Employee" Type="UniversityStoreModel.Employee" Multiplicity="0..1" />
+          <End Role="RequisitionList" Type="UniversityStoreModel.RequisitionList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeNumber" />
+            </Principal>
+            <Dependent Role="RequisitionList">
+              <PropertyRef Name="ApprovedByHeadID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Supplier">
+          <End Role="Supplier" Type="UniversityStoreModel.Supplier" Multiplicity="0..1" />
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Supplier1ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Supplier1">
+          <End Role="Supplier" Type="UniversityStoreModel.Supplier" Multiplicity="0..1" />
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Supplier2ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Supplier2">
+          <End Role="Supplier" Type="UniversityStoreModel.Supplier" Multiplicity="0..1" />
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="Supplier3ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseOrderDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="1" />
+          <End Role="PurchaseOrderDetails" Type="UniversityStoreModel.PurchaseOrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="PurchaseOrderDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="1" />
+          <End Role="RequisitionDetails" Type="UniversityStoreModel.RequisitionDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="RequisitionDetails">
+              <PropertyRef Name="ItemNmber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stock_Product">
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="1" />
+          <End Role="Stock" Type="UniversityStoreModel.Stock" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="Stock">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyDetails_Product">
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="1" />
+          <End Role="SupplyDetails" Type="UniversityStoreModel.SupplyDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="SupplyDetails">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Unfulfilled_Product">
+          <End Role="Product" Type="UniversityStoreModel.Product" Multiplicity="0..1" />
+          <End Role="Unfulfilled" Type="UniversityStoreModel.Unfulfilled" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ItemNumber" />
+            </Principal>
+            <Dependent Role="Unfulfilled">
+              <PropertyRef Name="ItemNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseOrder_Supplier">
+          <End Role="Supplier" Type="UniversityStoreModel.Supplier" Multiplicity="0..1" />
+          <End Role="PurchaseOrder" Type="UniversityStoreModel.PurchaseOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="PurchaseOrder">
+              <PropertyRef Name="SupplierCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseOrderDetails_PurchaseOrder">
+          <End Role="PurchaseOrder" Type="UniversityStoreModel.PurchaseOrder" Multiplicity="1" />
+          <End Role="PurchaseOrderDetails" Type="UniversityStoreModel.PurchaseOrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PurchaseOrder">
+              <PropertyRef Name="PONumber" />
+            </Principal>
+            <Dependent Role="PurchaseOrderDetails">
+              <PropertyRef Name="PONumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RequisitionDetails_RequisitionList">
+          <End Role="RequisitionList" Type="UniversityStoreModel.RequisitionList" Multiplicity="1" />
+          <End Role="RequisitionDetails" Type="UniversityStoreModel.RequisitionDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RequisitionList">
+              <PropertyRef Name="RequisitionListNumber" />
+            </Principal>
+            <Dependent Role="RequisitionDetails">
+              <PropertyRef Name="RequisitionListNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SupplyDetails_Supplier">
+          <End Role="Supplier" Type="UniversityStoreModel.Supplier" Multiplicity="1" />
+          <End Role="SupplyDetails" Type="UniversityStoreModel.SupplyDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="SupplierCode" />
+            </Principal>
+            <Dependent Role="SupplyDetails">
+              <PropertyRef Name="SupplierCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UniversityStoreModelStoreContainer" CdmEntityContainer="UniversityStoreEntities">
+          <EntitySetMapping Name="AdjustmentVoucherDetails">
+            <EntityTypeMapping TypeName="UniversityStoreModel.AdjustmentVoucherDetail">
+              <MappingFragment StoreEntitySet="AdjustmentVoucherDetails">
+                <ScalarProperty Name="VoucherNumber" ColumnName="VoucherNumber" />
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AdjustmentVouchers">
+            <EntityTypeMapping TypeName="UniversityStoreModel.AdjustmentVoucher">
+              <MappingFragment StoreEntitySet="AdjustmentVouchers">
+                <ScalarProperty Name="VoucherNumber" ColumnName="VoucherNumber" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollectionPoints">
+            <EntityTypeMapping TypeName="UniversityStoreModel.CollectionPoint">
+              <MappingFragment StoreEntitySet="CollectionPoint">
+                <ScalarProperty Name="CollectionPointID" ColumnName="CollectionPointID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CollectionTime" ColumnName="CollectionTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConsolidatedRequisitionLists">
+            <EntityTypeMapping TypeName="UniversityStoreModel.ConsolidatedRequisitionList">
+              <MappingFragment StoreEntitySet="ConsolidatedRequisitionList">
+                <ScalarProperty Name="ConsolidatedListID" ColumnName="ConsolidatedListID" />
+                <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConsolidatedRequisitionListDetails">
+            <EntityTypeMapping TypeName="UniversityStoreModel.ConsolidatedRequisitionListDetail">
+              <MappingFragment StoreEntitySet="ConsolidatedRequisitionListDetails">
+                <ScalarProperty Name="ConsolidatedListID" ColumnName="ConsolidatedListID" />
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="QuantityRequested" ColumnName="QuantityRequested" />
+                <ScalarProperty Name="DateRequest" ColumnName="DateRequest" />
+                <ScalarProperty Name="ActualQuantity" ColumnName="ActualQuantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Delegates">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Delegate">
+              <MappingFragment StoreEntitySet="Delegate">
+                <ScalarProperty Name="DelegateID" ColumnName="DelegateID" />
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+                <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+                <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+                <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+                <ScalarProperty Name="DepatmentName" ColumnName="DepatmentName" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+                <ScalarProperty Name="HeadsEmployeeNumber" ColumnName="HeadsEmployeeNumber" />
+                <ScalarProperty Name="CollectionPointID" ColumnName="CollectionPointID" />
+                <ScalarProperty Name="RepresentativeEmpNo" ColumnName="RepresentativeEmpNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+                <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Delagate" ColumnName="Delagate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ReorderLevel" ColumnName="ReorderLevel" />
+                <ScalarProperty Name="ReorderQuantity" ColumnName="ReorderQuantity" />
+                <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+                <ScalarProperty Name="Bin" ColumnName="Bin" />
+                <ScalarProperty Name="Supplier1ID" ColumnName="Supplier1ID" />
+                <ScalarProperty Name="Supplier2ID" ColumnName="Supplier2ID" />
+                <ScalarProperty Name="Supplier3ID" ColumnName="Supplier3ID" />
+                <ScalarProperty Name="AdjustmentVoucherPrice" ColumnName="AdjustmentVoucherPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PurchaseOrders">
+            <EntityTypeMapping TypeName="UniversityStoreModel.PurchaseOrder">
+              <MappingFragment StoreEntitySet="PurchaseOrder">
+                <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+                <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PurchaseOrderDetails">
+            <EntityTypeMapping TypeName="UniversityStoreModel.PurchaseOrderDetail">
+              <MappingFragment StoreEntitySet="PurchaseOrderDetails">
+                <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RequestStationaryCarts">
+            <EntityTypeMapping TypeName="UniversityStoreModel.RequestStationaryCart">
+              <MappingFragment StoreEntitySet="RequestStationaryCart">
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RequisitionDetails">
+            <EntityTypeMapping TypeName="UniversityStoreModel.RequisitionDetail">
+              <MappingFragment StoreEntitySet="RequisitionDetails">
+                <ScalarProperty Name="RequisitionListNumber" ColumnName="RequisitionListNumber" />
+                <ScalarProperty Name="ItemNmber" ColumnName="ItemNmber" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RequisitionLists">
+            <EntityTypeMapping TypeName="UniversityStoreModel.RequisitionList">
+              <MappingFragment StoreEntitySet="RequisitionList">
+                <ScalarProperty Name="RequisitionListNumber" ColumnName="RequisitionListNumber" />
+                <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ApprovedByHeadID" ColumnName="ApprovedByHeadID" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stocks">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Stock">
+              <MappingFragment StoreEntitySet="Stock">
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="TotalInventoryBalance" ColumnName="TotalInventoryBalance" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Suppliers">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Supplier">
+              <MappingFragment StoreEntitySet="Supplier">
+                <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="GSTRegistrationNo" ColumnName="GSTRegistrationNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SupplyDetails">
+            <EntityTypeMapping TypeName="UniversityStoreModel.SupplyDetail">
+              <MappingFragment StoreEntitySet="SupplyDetails">
+                <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="UniversityStoreModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transactions">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Transaction">
+              <MappingFragment StoreEntitySet="Transaction">
+                <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Flow" ColumnName="Flow" />
+                <ScalarProperty Name="QuantityAdjusted" ColumnName="QuantityAdjusted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Unfulfilleds">
+            <EntityTypeMapping TypeName="UniversityStoreModel.Unfulfilled">
+              <MappingFragment StoreEntitySet="Unfulfilled">
+                <ScalarProperty Name="UnfulfilledID" ColumnName="UnfulfilledID" />
+                <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="UnfulfilledQuantity" ColumnName="UnfulfilledQuantity" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="UniversityStoreModel">
+        <EntityTypeShape EntityType="UniversityStoreModel.AdjustmentVoucherDetail" Width="1.5" PointX="5.25" PointY="15.75" Height="3.4124561142921426" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.AdjustmentVoucher" Width="1.5" PointX="3" PointY="21.5" Height="1.9271655571460755" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.CollectionPoint" Width="1.5" PointX="1.5" PointY="1.75" Height="2.1747139833370834" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.ConsolidatedRequisitionList" Width="1.5" PointX="6" PointY="4.25" Height="2.4222624095280967" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.ConsolidatedRequisitionListDetail" Width="2.375" PointX="8.25" PointY="16" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Delegate" Width="1.5" PointX="5.75" PointY="0.75" Height="2.4222624095280958" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Department" Width="1.5" PointX="3.75" PointY="3" Height="4.89774667143822" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Employee" Width="1.5" PointX="1.5" PointY="4.75" Height="4.4026498190561947" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Product" Width="1.5" PointX="3" PointY="14.25" Height="6.3830372285842927" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.PurchaseOrder" Width="1.5" PointX="3" PointY="10.875" Height="2.6698108357191082" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.PurchaseOrderDetail" Width="1.5" PointX="5.25" PointY="11.25" Height="2.9173592619101214" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.RequestStationaryCart" Width="1.5" PointX="7.75" PointY="0.75" Height="1.9271655571460755" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.RequisitionDetail" Width="1.5" PointX="5.25" PointY="20.25" Height="2.422262409528102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.RequisitionList" Width="1.5" PointX="3" PointY="24.5" Height="3.9075529666741744" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Stock" Width="1.5" PointX="5.25" PointY="31.125" Height="1.9271655571460791" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Supplier" Width="1.5" PointX="0.75" PointY="13.625" Height="4.155101392865177" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.SupplyDetail" Width="1.5" PointX="8.25" PointY="11.875" Height="2.422262409528102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7.75" Height="2.422262409528102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Transaction" Width="1.5" PointX="7.75" PointY="7.75" Height="2.422262409528102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityStoreModel.Unfulfilled" Width="1.5" PointX="8.25" PointY="19.875" Height="3.1649076881011382" IsExpanded="true" />
+        <AssociationConnector Association="UniversityStoreModel.FK_AdjustmentVoucherDetails_AdjustmentVouchers" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="21.501152846153843" />
+          <ConnectorPoint PointX="4.875" PointY="21.126152846153843" />
+          <ConnectorPoint PointX="4.875" PointY="17.640246775193262" />
+          <ConnectorPoint PointX="4.963541666666667" PointY="17.640246775193262" />
+          <ConnectorPoint PointX="5.130208333333333" PointY="17.640246775193262" />
+          <ConnectorPoint PointX="5.25" PointY="17.640246775193262" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_AdjustmentVoucherDetails_Product" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="16.540614028573035" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="16.540614028573035" />
+          <ConnectorPoint PointX="5.177083333333333" PointY="16.540614028573035" />
+          <ConnectorPoint PointX="5.25" PointY="16.540614028573035" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Department_CollectionPoint" ManuallyRouted="false">
+          <ConnectorPoint PointX="3" PointY="3.4623569916685417" />
+          <ConnectorPoint PointX="3.75" PointY="3.4623569916685417" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_ConsolidatedRequisitionList_Department" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="5.4611312047640483" />
+          <ConnectorPoint PointX="6" PointY="5.4611312047640483" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_ConsolidatedRequisitionList" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="5.2401432291666659" />
+          <ConnectorPoint PointX="10.21875" PointY="5.2401432291666659" />
+          <ConnectorPoint PointX="10.21875" PointY="16" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_ConsolidatedRequisitionListDetails_Product" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="4.572916666666667" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="4.739583333333333" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="4.963541666666667" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="5.130208333333333" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="9.4375" PointY="18.877336242788466" />
+          <ConnectorPoint PointX="9.4375" PointY="18.364889322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Department_Employee" ManuallyRouted="false">
+          <ConnectorPoint PointX="3" PointY="6.32387333571911" />
+          <ConnectorPoint PointX="3.75" PointY="6.32387333571911" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Department_Employee1" ManuallyRouted="false">
+          <ConnectorPoint PointX="3" PointY="5.4744366678595551" />
+          <ConnectorPoint PointX="3.75" PointY="5.4744366678595551" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Employee_Department" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="7.1733100035786652" />
+          <ConnectorPoint PointX="3" PointY="7.1733100035786652" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_RequisitionList_Department" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.046875" PointY="6.90330078125" />
+          <ConnectorPoint PointX="5.046875" PointY="26.670893183649426" />
+          <ConnectorPoint PointX="4.989583333333333" PointY="26.670893183649426" />
+          <ConnectorPoint PointX="4.822916666666667" PointY="26.670893183649426" />
+          <ConnectorPoint PointX="4.5" PointY="26.670893183649426" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Unfulfilled_Department" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.65625" PointY="6.90330078125" />
+          <ConnectorPoint PointX="4.65625" PointY="20.109375" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="20.109375" />
+          <ConnectorPoint PointX="5.130208333333333" PointY="20.109375" />
+          <ConnectorPoint PointX="8.25" PointY="20.109375" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_RequisitionList_Employee" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.625" PointY="9.1526498190561938" />
+          <ConnectorPoint PointX="2.625" PointY="26.453776483337087" />
+          <ConnectorPoint PointX="3" PointY="26.453776483337087" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_RequisitionList_Employee1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.4374975" PointY="9.1526498190561938" />
+          <ConnectorPoint PointX="2.4374975" PointY="25.44563574166855" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="25.44563574166855" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="25.44563574166855" />
+          <ConnectorPoint PointX="3" PointY="25.44563574166855" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Product_Supplier" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.015050696432588" />
+          <ConnectorPoint PointX="2.3541641666666666" PointY="16.015050696432588" />
+          <ConnectorPoint PointX="2.5208308333333336" PointY="16.015050696432588" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="16.015050696432588" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="16.015050696432588" />
+          <ConnectorPoint PointX="3" PointY="16.015050696432588" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Product_Supplier1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="15.070025348216294" />
+          <ConnectorPoint PointX="2.3541641666666666" PointY="15.070025348216294" />
+          <ConnectorPoint PointX="2.5208308333333336" PointY="15.070025348216294" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="15.070025348216294" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="15.070025348216294" />
+          <ConnectorPoint PointX="3" PointY="15.070025348216294" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Product_Supplier2" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.960076044648883" />
+          <ConnectorPoint PointX="2.3541641666666666" PointY="16.960076044648883" />
+          <ConnectorPoint PointX="2.5208308333333336" PointY="16.960076044648883" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="16.960076044648883" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="16.960076044648883" />
+          <ConnectorPoint PointX="3" PointY="16.960076044648883" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_PurchaseOrderDetails_Product" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.258075923076925" />
+          <ConnectorPoint PointX="4.5660744349011209" PointY="14.192001488175801" />
+          <ConnectorPoint PointX="4.6839255650988791" PointY="14.074150357978045" />
+          <ConnectorPoint PointX="4.90625" PointY="13.851825923076923" />
+          <ConnectorPoint PointX="4.90625" PointY="14.512262108063968" />
+          <ConnectorPoint PointX="5.0348244349011209" PointY="14.383687673162847" />
+          <ConnectorPoint PointX="5.1526755650988791" PointY="14.26583654296509" />
+          <ConnectorPoint PointX="5.2511528461538459" PointY="14.167359261910121" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_RequisitionDetails_Product" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="20.441518614292146" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="20.441518614292146" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="20.441518614292146" />
+          <ConnectorPoint PointX="5.010416666666667" PointY="20.441518614292146" />
+          <ConnectorPoint PointX="5.177083333333333" PointY="20.441518614292146" />
+          <ConnectorPoint PointX="5.25" PointY="20.441518614292146" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Stock_Product" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="20.5707285362766" />
+          <ConnectorPoint PointX="4.8160744349011217" PointY="20.886802971177723" />
+          <ConnectorPoint PointX="4.9339255650988791" PointY="21.004654101375479" />
+          <ConnectorPoint PointX="4.9375" PointY="21.0082285362766" />
+          <ConnectorPoint PointX="4.9375" PointY="32.088582778573041" />
+          <ConnectorPoint PointX="5.25" PointY="32.088582778573041" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_SupplyDetails_Product" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.276537461538462" />
+          <ConnectorPoint PointX="4.5973244349011209" PointY="14.17921302663734" />
+          <ConnectorPoint PointX="4.7151755650988791" PointY="14.061361896439584" />
+          <ConnectorPoint PointX="4.8125" PointY="13.96403746153846" />
+          <ConnectorPoint PointX="4.8125" PointY="14.230286458333332" />
+          <ConnectorPoint PointX="4.963541666666667" PointY="14.230286458333332" />
+          <ConnectorPoint PointX="5.130208333333333" PointY="14.230286458333332" />
+          <ConnectorPoint PointX="7.875" PointY="14.230286458333332" />
+          <ConnectorPoint PointX="8.2499999999999982" PointY="13.855286458333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_Unfulfilled_Product" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="20.03125" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="20.03125" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="20.03125" />
+          <ConnectorPoint PointX="5.010416666666667" PointY="20.03125" />
+          <ConnectorPoint PointX="5.177083333333333" PointY="20.03125" />
+          <ConnectorPoint PointX="7.791666666666667" PointY="20.03125" />
+          <ConnectorPoint PointX="7.958333333333333" PointY="20.03125" />
+          <ConnectorPoint PointX="8.25" PointY="20.03125" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_PurchaseOrder_Supplier" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="13.625" />
+          <ConnectorPoint PointX="1.5" PointY="12.209905417859554" />
+          <ConnectorPoint PointX="2.3541641666666666" PointY="12.209905417859554" />
+          <ConnectorPoint PointX="2.5208308333333336" PointY="12.209905417859554" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="12.209905417859554" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="12.209905417859554" />
+          <ConnectorPoint PointX="3" PointY="12.209905417859554" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_PurchaseOrderDetails_PurchaseOrder" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="12.397405417859554" />
+          <ConnectorPoint PointX="5.010416666666667" PointY="12.397405417859554" />
+          <ConnectorPoint PointX="5.177083333333333" PointY="12.397405417859554" />
+          <ConnectorPoint PointX="5.25" PointY="12.397405417859554" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_RequisitionDetails_RequisitionList" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="25.44563574166855" />
+          <ConnectorPoint PointX="4.854166666666667" PointY="25.44563574166855" />
+          <ConnectorPoint PointX="5.177083333333333" PointY="25.44563574166855" />
+          <ConnectorPoint PointX="6" PointY="25.44563574166855" />
+          <ConnectorPoint PointX="6" PointY="22.672262409528102" />
+        </AssociationConnector>
+        <AssociationConnector Association="UniversityStoreModel.FK_SupplyDetails_Supplier" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="14.346487968997245" />
+          <ConnectorPoint PointX="2.4010397916666668" PointY="14.346487968997245" />
+          <ConnectorPoint PointX="2.5677064583333338" PointY="14.346487968997245" />
+          <ConnectorPoint PointX="2.6354179166666665" PointY="14.346487968997245" />
+          <ConnectorPoint PointX="2.8020845833333334" PointY="14.346487968997245" />
+          <ConnectorPoint PointX="2.875" PointY="14.346487968997245" />
+          <ConnectorPoint PointX="2.875" PointY="14.105286458333332" />
+          <ConnectorPoint PointX="4.5694561314102593" PointY="14.10528645833333" />
+          <ConnectorPoint PointX="4.8958333333333321" PointY="14.105286458333332" />
+          <ConnectorPoint PointX="4.963541666666667" PointY="14.105286458333332" />
+          <ConnectorPoint PointX="5.130208333333333" PointY="14.105286458333332" />
+          <ConnectorPoint PointX="7.916666666666667" PointY="14.105286458333332" />
+          <ConnectorPoint PointX="8.0833333333333339" PointY="14.105286458333332" />
+          <ConnectorPoint PointX="9.0312519999999985" PointY="14.105286458333332" />
+          <ConnectorPoint PointX="9.0312519999999985" PointY="13.855286458333334" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

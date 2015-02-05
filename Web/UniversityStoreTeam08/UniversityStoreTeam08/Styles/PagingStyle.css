@@ -1,0 +1,79 @@
+﻿.paging
+
+        {
+
+        }
+
+         
+
+        .paging a
+
+        {
+
+            background-color: #CCCCCC;
+
+            padding: 5px 7px;
+
+            text-decoration: none;
+
+            border: 1px solid #CCCCCC;
+
+        }
+
+         
+
+        .paging a:hover
+
+        {
+
+            background-color: #E1FFEF;
+
+            color: #4582ec;
+
+            border: 1px solid #4582ec;
+
+        }
+
+         
+
+        .paging span
+
+        {
+
+            background-color: #E1FFEF;
+
+            padding: 5px 7px;
+
+            color: #4582ec;
+
+            border: 1px solid #4582ec;
+
+        }
+
+         
+
+        tr.paging
+
+        {
+
+            background: none !important;
+
+        }
+
+         
+
+        tr.paging tr
+
+        {
+
+            background: none !important;
+
+        }
+
+        tr.paging td
+
+        {
+
+            border: none;
+
+        }

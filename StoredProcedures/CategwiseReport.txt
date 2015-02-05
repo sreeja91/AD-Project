@@ -1,0 +1,36 @@
+USE [UniversityStore]
+GO
+/****** Object:  StoredProcedure [dbo].[CategwiseReport]    Script Date: 09/15/2014 21:59:27 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[CategwiseReport]
+@month1 int, 
+@month2 int,
+@month3 int,
+@year1 int,
+@year2 int,
+@year3 int,
+@categ1 varchar(50),
+@categ2 varchar(50),
+@categ3 varchar(50),
+@dept varchar(50)
+as
+begin
+SELECT        ConsolidatedRequisitionListDetails.ActualQuantity, Product.Category, ConsolidatedRequisitionListDetails.DateRequest
+FROM            ConsolidatedRequisitionList INNER JOIN
+                         Department ON ConsolidatedRequisitionList.DepartmentCode = Department.DepartmentCode INNER JOIN
+                         ConsolidatedRequisitionListDetails INNER JOIN
+                         Product ON ConsolidatedRequisitionListDetails.ItemNumber = Product.ItemNumber ON 
+                         ConsolidatedRequisitionList.ConsolidatedListID = ConsolidatedRequisitionListDetails.ConsolidatedListID
+WHERE       ((MONTH(ConsolidatedRequisitionListDetails.DateRequest) = @month1 AND YEAR(ConsolidatedRequisitionListDetails.DateRequest) = @year1) OR
+             (MONTH(ConsolidatedRequisitionListDetails.DateRequest) = @month2 AND YEAR(ConsolidatedRequisitionListDetails.DateRequest) = @year2) OR
+             (MONTH(ConsolidatedRequisitionListDetails.DateRequest) = @month3 AND YEAR(ConsolidatedRequisitionListDetails.DateRequest) = @year3)) AND 
+             (Product.Category =@categ1 OR
+              Product.Category =@categ2 OR
+              Product.Category =@categ3) AND
+             (ConsolidatedRequisitionList.DepartmentCode=@dept)AND
+             (ConsolidatedRequisitionList.Status = 'closed')                             
+GROUP BY  Product.Category,ConsolidatedRequisitionListDetails.DateRequest,ConsolidatedRequisitionListDetails.ActualQuantity
+end

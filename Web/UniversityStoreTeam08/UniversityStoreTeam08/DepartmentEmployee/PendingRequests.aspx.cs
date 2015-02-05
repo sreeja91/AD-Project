@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace UniversityStoreTeam08.DepartmentEmployee
+{
+    public partial class PendingRequests : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            System.Web.UI.HtmlControls.HtmlGenericControl li = (System.Web.UI.HtmlControls.HtmlGenericControl)this.Page.Master.FindControl("PendingRequests");
+            li.Attributes.Add("class", "active");
+
+            Label lblWelcome = (Label)this.Master.FindControl("lblWelcome");
+            lblWelcome.Text = "Department Employee";//from login username
+        }
+    }
+}

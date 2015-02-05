@@ -1,0 +1,18 @@
+USE [UniversityStore]
+GO
+/****** Object:  StoredProcedure [dbo].[OrderSummary]    Script Date: 09/15/2014 21:59:53 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[OrderSummary]
+@month1 varchar(7),
+@month2 varchar(7),
+@month3 varchar(7)
+as
+begin 
+select Category,MONTH(DateCreated)as Month,count(*) as NumOfOrders from Product prod,PurchaseOrder po,PurchaseOrderDetails pod
+where prod.ItemNumber=pod.ItemNumber and po.PONumber=pod.PONumber
+AND (Convert(varchar(7),po.DateCreated,120)=@month1 OR Convert(varchar(7),po.DateCreated,120)=@month2 OR Convert(varchar(7),po.DateCreated,120)=@month3) AND po.Status='acknowledge'
+group by prod.Category,MONTH(DateCreated)
+end

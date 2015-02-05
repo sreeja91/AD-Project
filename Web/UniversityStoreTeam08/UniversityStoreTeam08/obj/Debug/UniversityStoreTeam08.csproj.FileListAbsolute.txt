@@ -1,0 +1,182 @@
+c:\users\a0122204a\documents\visual studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\UniversityStoreTeam08.dll
+c:\users\a0122204a\documents\visual studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\UniversityStoreTeam08.pdb
+c:\users\a0122204a\documents\visual studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\obj\Debug\UniversityStoreTeam08.dll
+c:\users\a0122204a\documents\visual studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\obj\Debug\UniversityStoreTeam08.pdb
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxControlToolkit.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\HtmlAgilityPack.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxMin.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.OData.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.Edm.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\System.Spatial.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxControlToolkit.pdb
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.OData.xml
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.Edm.xml
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\System.Spatial.xml
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\A0122204A\Documents\Visual Studio 2010\Projects\UniversityStoreTeam08\UniversityStoreTeam08\obj\Debug\UniversityStoreTeam08.csprojResolveAssemblyReference.cache
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\UniversityStoreTeam08.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\UniversityStoreTeam08.pdb
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxControlToolkit.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\itextsharp.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.WindowsAzure.Storage.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\HtmlAgilityPack.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxMin.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.OData.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.Edm.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\System.Spatial.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxControlToolkit.pdb
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.WindowsAzure.Storage.xml
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.OData.xml
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.Edm.xml
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\System.Spatial.xml
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ar\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\cs\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\he\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\hi\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\nl\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\pl\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\pt\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\System.Spatial.resources.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\obj\Debug\UniversityStoreTeam08.dll
+D:\For AD\UniversityStoreTeam08\UniversityStoreTeam08\obj\Debug\UniversityStoreTeam08.pdb
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\UniversityStoreTeam08.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\UniversityStoreTeam08.pdb
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxControlToolkit.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.WindowsAzure.Storage.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\HtmlAgilityPack.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxMin.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.OData.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.Edm.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\System.Spatial.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\AjaxControlToolkit.pdb
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.WindowsAzure.Storage.xml
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.OData.xml
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\Microsoft.Data.Edm.xml
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\System.Spatial.xml
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ar\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\cs\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\he\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\hi\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\nl\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\pl\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\pt\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\de\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\es\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\fr\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\it\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ja\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ko\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\ru\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hans\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\bin\zh-Hant\System.Spatial.resources.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\obj\Debug\UniversityStoreTeam08.dll
+D:\phyo\UniversityStoreTeam08\UniversityStoreTeam08\obj\Debug\UniversityStoreTeam08.pdb
